@@ -32,3 +32,8 @@ button {
     padding-left: 45px;
     padding-top: 5px;
 }
+
+#ac {
+    height: 50px;
+    width: 100px;
+}

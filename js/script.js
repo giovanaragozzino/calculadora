@@ -35,7 +35,7 @@ function botaoNum(num) {
                     var valor = valor1 / valor2;
                 } else {
                     if (funcao == "porcentagem") {
-                        var valor =  valor;
+                        var valor = valor;
                     }
                 }
             }

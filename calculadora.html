@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilo.css">
+
+    <title>Calculadora</title>
+  </head>
+
+  <body>
+    <div class="container mt-5">
+        <div class="fundo">
+            <div class="row">
+                <form name="calc" method="POST" action="">
+                    <input type="text" class="visor text-right" name="visor" id="visor">
+
+                    <div class="numeros">
+                        <div class="row">
+                            <input type="button" value="AC" name="limpar" class="btn btn-danger botao num" onclick="botaoLimpar();">
+                            <input type="button" value="CE" name="limpar2" class="btn btn-warning botao num" onclick="botaoLimpar2();">
+                            <input type="button" value="%" name="porcentagem" class="btn btn-light botao funcao" onclick="calcParse('porcentagem');">
+                            <input type="button" value="÷" name="dividir" class="btn btn-light botao funcao" onclick="calcParse('dividr')">
+                        </div>
+                    
+                        <div class="row">
+                            <input type="button" value="7" name="num7" class="btn btn-light botao num" onclick="botaoNum(7);">
+                            <input type="button" value="8" name="num8" class="btn btn-light botao num" onclick="botaoNum(8);">
+                            <input type="button" value="9" name="num9" class="btn btn-light botao num" onclick="botaoNum(9);">
+                            <input type="button" value="x" name="multiplicar" class="btn btn-light botao funcao" onclick="calcParse('multiplicar');">
+                        </div>
+                    
+                        <div class="row">
+                            <input type="button" value="4" name="num4" class="btn btn-light botao num" onclick="botaoNum(4);">
+                            <input type="button" value="5" name="num5" class="btn btn-light botao num" onclick="botaoNum(5);">
+                            <input type="button" value="6" name="num6" class="btn btn-light botao num" onclick="botaoNum(6);">
+                            <input type="button" value="-" name="subtrair" class="btn btn-light botao funcao" onclick="calcParse('subtrair');">
+                        </div>
+                        
+                        <div class="row">
+                            <input type="button" value="1" name="num1" class="btn btn-light botao num" onclick="botaoNum(1);">
+                            <input type="button" value="2" name="num2" class="btn btn-light botao num" onclick="botaoNum(2);">
+                            <input type="button" value="3" name="num3" class="btn btn-light botao num" onclick="botaoNum(3);">
+                            <input type="button" value="+" name="somar" class="btn btn-light botao funcao" onclick="calcParse('somar');">
+                        </div>
+                        
+                        <div class="row">
+                            <button type="button" id="" class="btn btn-light" onclick="botao(numero);">  </button>
+                            <input type="button" value="0" name="num0" class="btn btn-light botao num" onclick="botaoNum(0);">
+                            <input type="button" value="." name="." class="btn btn-light botao num" onclick="botaoNum('.');">
+                            <input type="button" value="=" name="igual" class="btn btn-light botao num" onclick="calcParse('resultado');">
+                        </div>
+                    </div>
+                </form>
+
+                
+            </div>
+        
+        </div>
+    
+    </div>
+
+    
+    <!-- JavaScript (Opcional) -->
+
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" 
+    crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
